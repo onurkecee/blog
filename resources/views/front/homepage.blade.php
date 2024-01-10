@@ -65,11 +65,18 @@
     </div>
 </div>
 <div class="col-md-3">
-    <div class="list-group">
-        <a href="#" class="list-group-item">Günlük Hayat <span class="bagde">12</span></a>
-        <a href="#" class="list-group-item">Eğitim <span class="bagde">12</span></a>
-        <a href="#" class="list-group-item">Teknoloji <span class="bagde">12</span></a>
+    <div class="card">
+        <div class="card-header">
+            Kategoriler
+        </div>
+        <div class="list-group">
+            @foreach($categories as $category) 
+            {
+               <a href="#" class="list-group-item">{{$category->name}} <span class="bagde">12</span></a>
+            }
+        </div>
     </div>
+
 </div>
 
 @endsection

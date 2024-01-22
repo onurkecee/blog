@@ -64,19 +64,5 @@
     <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a>
     </div>
 </div>
-<div class="col-md-3">
-    <div class="card">
-        <div class="card-header">
-            Kategoriler
-        </div>
-        <div class="list-group">
-            @foreach($categories as $category) 
-            {
-               <a href="#" class="list-group-item">{{$category->name}} <span class="bagde">12</span></a>
-            }
-        </div>
-    </div>
-
-</div>
-
+@include('front.widgets.categoryWidget')
 @endsection

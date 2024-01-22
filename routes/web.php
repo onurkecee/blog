@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Front\Homepage;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,8 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
 Route::get('/', function () {
     return view('front.homepage'); 
 });
+*/
 
-//Route::get('/','Front\Homepage@index')->name('homepage');
+//Route::get('/','app\Http\Controllers\Front\Homepage@index')->name('homepage');
+Route::get('/', [Homepage::class, 'index']);

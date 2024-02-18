@@ -5,9 +5,9 @@
         </div>
         <div class="list-group">
             @foreach($categories as $category) 
-            {
-               <a href="#" class="list-group-item">{{$category->name}}<span class="bagde"></span></a>
-            }
+            
+               <a href="#" class="list-group-item">{{$category->name}} <span class="badge bg-danger float-right text-white">{{$category->kategoriSayisi()}}</span></a>
+            
             @endforeach
         </div>
     </div>

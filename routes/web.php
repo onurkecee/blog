@@ -21,3 +21,4 @@ Route::get('/', function () {
 
 //Route::get('/','app\Http\Controllers\Front\Homepage@index')->name('homepage');
 Route::get('/', [Homepage::class, 'index']);
+Route::get('/{category}/{id}','App\Http\Controllers\Front\Homepage@blogDetay')->name('blogDetay');
